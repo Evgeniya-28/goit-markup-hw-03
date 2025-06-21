@@ -3,14 +3,42 @@ body {
   color: #434455;
   background-color: #fff;
 }
-
+/* reset */
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 a {
   text-decoration: none;
+}
+/* common */
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* header */
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -22,6 +50,10 @@ a {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
 
 .header-logo .logo-part {
   color: #2e2f42;
@@ -32,24 +64,37 @@ a {
 }
 
 .nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
-
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .nav-link:hover,
 .nav-link:focus,
 .contacts-link:hover,
@@ -58,6 +103,7 @@ a {
 }
 .hero {
   background-color: #2e2f42;
+  padding-bottom: 188px;
 }
 .hero-section {
   font-family: "Roboto", sans-serif;
@@ -67,8 +113,13 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  padding-top: 188px;
+  margin-bottom: 48px;
+  max-width: 496px;
+  margin: auto;
 }
 .button-hero {
+  display: block;
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -76,7 +127,11 @@ a {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin: 48px auto 0 auto;
 }
+
 .button-hero:hover,
 .button-hero:focus {
   background-color: #404bbf;
@@ -87,6 +142,11 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  max-width: 264px;
+}
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .benefits-p {
   font-size: 16px;
@@ -94,9 +154,22 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
   font-weight: 400;
+  max-width: 264px;
+}
+.benefits-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 .teams {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.team-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 .our-team {
   font-size: 36px;
@@ -105,9 +178,11 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .team-set {
   background-color: #ffffff;
+  max-width: 264px;
 }
 .team-card {
   font-weight: 500;
@@ -115,11 +190,16 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 .team-p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
+  text-align: center;
 }
 .our-portfolio {
   font-size: 36px;
@@ -128,6 +208,8 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  padding-top: 120px;
+  margin-bottom: 72px;
 }
 .port {
   font-weight: 500;
@@ -135,14 +217,35 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+  padding-left: 16px;
 }
 .portfolio-set {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-left: 16px;
+  padding-bottom: 32px;
+}
+.portfolio-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.portfolio-list-text {
+  border-bottom: 1px solid #e7e9fc;
+  max-width: 360px;
 }
 .footer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
   background-color: #2e2f42;
+  padding-top: 100px;
+}
+.footer-container {
+  margin-left: 156px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -156,8 +259,15 @@ a {
 .footer-part {
   color: #f4f4fd;
 }
+
 .footer-text {
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  margin-top: 16px;
+  padding-bottom: 100px;
+  max-width: 264px;
+}
+.visually-hidden {
+  display: none;
 }
