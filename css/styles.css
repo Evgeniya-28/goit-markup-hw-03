@@ -103,6 +103,7 @@ a {
 }
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
   padding-bottom: 188px;
 }
 .hero-section {
@@ -113,7 +114,6 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding-top: 188px;
   margin-bottom: 48px;
   max-width: 496px;
   margin: auto;
@@ -130,6 +130,9 @@ a {
   border-radius: 4px;
   padding: 16px 32px;
   margin: 48px auto 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .button-hero:hover,
@@ -143,6 +146,7 @@ a {
   letter-spacing: 0.02em;
   color: #2e2f42;
   max-width: 264px;
+  margin-bottom: 8px;
 }
 .benefits {
   padding-top: 120px;
@@ -160,6 +164,9 @@ a {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+.benefits-li {
+  width: calc((100% - 72px) / 4);
 }
 .teams {
   background-color: #f4f4fd;
@@ -269,5 +276,17 @@ a {
   max-width: 264px;
 }
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+.img-link {
+  display: block;
 }
