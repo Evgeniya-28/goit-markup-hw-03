@@ -190,6 +190,7 @@ a {
 .team-set {
   background-color: #ffffff;
   max-width: 264px;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-card {
   font-weight: 500;
@@ -207,6 +208,13 @@ a {
   letter-spacing: 0.02em;
   padding-bottom: 32px;
   text-align: center;
+}
+.team-text {
+  padding: 32px 0;
+}
+.portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .our-portfolio {
   font-size: 36px;
@@ -226,6 +234,7 @@ a {
   color: #2e2f42;
   margin-top: 32px;
   padding-left: 16px;
+  margin-bottom: 8px;
 }
 .portfolio-set {
   font-size: 16px;
@@ -237,19 +246,26 @@ a {
 .portfolio-list {
   display: flex;
   align-items: center;
-  gap: 24px;
   margin-bottom: 48px;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-list-text {
-  border-bottom: 1px solid #e7e9fc;
   max-width: 360px;
+  width: calc((100% - 48px) / 3);
+}
+.portfolio-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .footer {
   display: flex;
   align-items: center;
   gap: 24px;
   background-color: #2e2f42;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 .footer-container {
   margin-left: 156px;
@@ -262,6 +278,8 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-part {
   color: #f4f4fd;
