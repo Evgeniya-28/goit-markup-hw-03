@@ -254,14 +254,11 @@ a {
   border-top: none;
 }
 .footer {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  background-color: #2e2f42;
-  padding: 100px 0;
+  background: #2e2f42;
 }
 .footer-container {
-  margin-left: 156px;
+  display: block;
+  padding: 100px 0;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
